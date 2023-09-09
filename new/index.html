@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br>
+    <div class="chat-container">
+        <div class="user-registration"><br><br>
+            <input type="text" id="username" placeholder="Enter your username">
+            <button id="register-button">Register</button>
+            <br>
+            <br>
+        </div>
+        <div class="room-selection" style="display: none;">
+            <p>Select a room:</p>
+            <select id="room-select">
+                <option value="general">General Room</option>
+                <option value="room1">Room 1</option>
+                <option value="room2">Room 2</option>
+                <option value="room3">Room 3</option>
+                <option value="room4">Room 4</option>
+                <!-- Add more room options as needed -->
+            </select>
+            <button id="join-room-button">Join Room</button><br>
+        </div>
+        <div class="chat-header">
+            <h1>Chat Room</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be displayed here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
